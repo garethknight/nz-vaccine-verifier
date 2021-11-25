@@ -16,4 +16,4 @@ TODO: Installation Instructions
 ## Other Install Options
 ------------------------
 
-Although the code is all provided here, you can also use [this unmanaged package](https://todo.com) to load this into your org
+Although the code is all provided here, you can also use [TODO: this unmanaged package](https://todo.com) to load this into your org
