@@ -33,8 +33,9 @@ This project provides both an example Auth Provider for Authenticating with the 
 5. Create a new `Named Credential` using your specific subdomain and appending the verification suffix on the end of it. This should be in the format: **https://**`Tenant Subdomain`**.vii.mattr.global/ext/nzcp/verify**.  Ensure that "Start Authentication Flow on Save", "Allow Merge Fields in HTTP Header" and "Allow Merge fields in HTTP Body" are ticked
    - **Label**: `Mattr`
    - **Name**: `Mattr`
-   - **URL**: In the format https://`Tenant Subdomain`.vii.mattr.global/ext/nzcp/verify
+   - **URL**: In the format https://`Tenant Subdomain`.vii.mattr.global/ext/nzcp/v1/verify
    - **Identity type**: `Named Principal`
+   - **Authentication Protocol**: `Oauth2`
    - **Authentication Provider**: `Mattr`
    - **Start Authentication Flow on Save**: [x]
    - **Generate Authorization Header**: [x]
