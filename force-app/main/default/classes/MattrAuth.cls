@@ -4,7 +4,7 @@
  *                    :
  * @author            : Gareth Knight - gknight@salesforce.com
  * @group             : 
- * @last modified on  : 11-25-2021
+ * @last modified on  : 11-29-2021
  * @last modified by  : Gareth Knight - gknight@salesforce.com
  * 
 **/
@@ -91,7 +91,17 @@ global class MattrAuth extends Auth.AuthProviderPluginClass {
                                                     state.queryParameters.get('state')
                                                 );
     } 
-
+    
+    /**
+        Refresh is required by the parent class and it's used if the original Access Token has expired.
+        In the Client Credentials flow, there is no Refresh token, so its implementation is exactly the
+        same as the Initiate() step.
+    **/
+    public override Auth.OAuthRefreshResult refresh(Map<String,String> authProviderConfiguration, String refreshToken) {
+        System.debug('### refresh');
+        final AuthResponse response = retrieveToken(authProviderConfiguration);
+        return new Auth.OAuthRefreshResult(response.access_token, response.token_type);
+    }
 
     /**
        Private method that gets the Auth Token using the Client Credentials Flow.
