@@ -7,22 +7,17 @@
 **/
 public with sharing class VerifierError {
     @AuraEnabled
-    public String value;
+    public String type;
 
     @AuraEnabled
-    public String msg;
+    public String message;
 
-    @AuraEnabled
-    public String param;
+    
 
-    @AuraEnabled
-    public String location;
-
-    public VerifierError(String value, String msg, String param, String location) {
-        this.value = value;
-        this.msg = msg;
-        this.param = param;
-        this.location = location;
+    public VerifierError(String type, String message) {
+        this.type = type;
+        this.message = message;
+       
     }
     public VerifierError() {}
 }
