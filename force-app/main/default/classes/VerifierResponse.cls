@@ -15,6 +15,8 @@ public with sharing class VerifierResponse {
     @InvocableVariable
     public VerifierMetadata metadata;
 
+   
+
     @InvocableVariable
     public Integer errorStatusCode;
 
@@ -25,7 +27,10 @@ public with sharing class VerifierResponse {
     public String message;
 
     @InvocableVariable
-    public List<VerifierError> details;
+    public List<VerifierDetails> details;
+
+    @InvocableVariable
+    public VerifierError error;
 
     public VerifierResponse(Boolean verified, VerifierPayload payload, VerifierMetadata metadata) {
         this.verified = verified;
@@ -33,9 +38,15 @@ public with sharing class VerifierResponse {
         this.metadata = metadata;
     }
 
-    public VerifierResponse(String code, String message, List<VerifierError> details) {
+    public VerifierResponse(String code, String message, List<VerifierDetails> details) {
         this.code = code;
         this.message = message;
         this.details = details;
+    }
+
+    public VerifierResponse(Boolean verified, VerifierError error) {
+        this.verified = verified;
+        this.error = error;
+       
     }
 }
