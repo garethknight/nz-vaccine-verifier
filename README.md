@@ -52,3 +52,12 @@ The Invocable method was really developed to be used in Flow as either part of a
 ------------------------
 
 Although the code is all provided here, you can also use [TODO](https://todo.com) to load this into your org
+
+## Contributors
+---------------
+Special thanks to the Gravity Lab team for their help,  specifically
+
+ - [Mike Cleaver](https://github.com/Mickster04)
+ - [David Smith](https://github.com/DavidSmithnz)
+
+
