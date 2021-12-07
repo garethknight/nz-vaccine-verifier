@@ -55,9 +55,9 @@ Although the code is all provided here, you can also use [TODO](https://todo.com
 
 ## Contributors
 ---------------
-Special thanks to the Gravity Lab team for their help,  specifically
+Special thanks to the Gravity Lab team for their help, specifically
 
- - [Mike Cleaver](https://github.com/Mickster04)
- - [David Smith](https://github.com/DavidSmithnz)
+ - [Mike Cleaver](https://github.com/Mickster04) - General code updates, testing and specifically the file upload callout
+ - [David Smith](https://github.com/DavidSmithnz) - Coordination, testing and error checking
 
 
